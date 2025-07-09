@@ -50,8 +50,8 @@ An example project demonstrating how to build a **Model Context Protocol (MCP) s
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/mcp-twitter-bot.git
-cd mcp-twitter-bot
+https://github.com/Zaki-Mohd/mcp-x-poster.git
+cd mcp-x-poster
 ```
 
 2. Install dependencies:
