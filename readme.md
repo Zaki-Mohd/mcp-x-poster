@@ -25,12 +25,22 @@ An example project demonstrating how to build a **Model Context Protocol (MCP) s
 
 ```
 .
-├── client.js            # MCP client (connects to server & interacts with Gemini)
-├── server.js            # MCP server (hosts tools and SSE endpoint)
-├── mcp.tool.js         # MCP tool: createPost (posts on Twitter)
-├── .env                 # API keys and tokens
-├── package.json
-└── README.md
+├── client
+│ ├── node_modules/
+│ ├── .env
+│ ├── index.js
+│ ├── package-lock.json
+│ └── package.json
+│
+├── server
+│ ├── node_modules/
+│ ├── .env
+│ ├── index.js
+│ ├── mcp.tool.js
+│ ├── package-lock.json
+│ └── package.json
+│
+
 ```
 
 ---
@@ -71,7 +81,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your_twitter_access_token_secret
 1️⃣ Start the MCP server:
 
 ```
-npx nodemon server.js
+npx nodemon index.js
 ```
 
 2️⃣ Start the MCP client (in a separate terminal):
